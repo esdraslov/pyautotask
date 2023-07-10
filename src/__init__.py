@@ -1,0 +1,2 @@
+import epack.pyautotask
+__package__=epack.pyautotask
