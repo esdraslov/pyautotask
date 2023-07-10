@@ -1,6 +1,7 @@
 import win32api, win32con
 import time
 from pynput.keyboard import Key, Controller
+from pyautogui import write
 
 def click(click_time = 0.1, pos: (int, int)):
     try:
@@ -23,3 +24,14 @@ def contextclick(click_time = 0.1, pos: (int, int)):
     except error as e:
         print("try install pywin32 because: " + e)
     return 2
+
+def press(key):
+    keyboard = Controller()
+
+    keyboard.press(key)
+    keyboard.relase(key)
+    return 0
+
+def write(text: str):
+    write(text)
+    return 0
