@@ -22,8 +22,8 @@ pip install epack.pyautotask
 ```python
 import epack.pyautotask as pt
 
-# click(click?: int, pos: (int, int) click with left button
-# context(click?: int, pos: (int, int) click with right button
+# click(x: int, y: int, click?: int) click with left button
+# context(x: int, y: int, click?: int) click with right button
 # press(key) press a key
 # write(text: str) write a text
 ```
